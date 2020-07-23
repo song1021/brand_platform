@@ -1,8 +1,5 @@
 package com.skk.common.paging;
 
-/**
- * Created by Hunter on 2020-06-22.
- */
 public class LayuiPage {
 
     private int page = 1;//当前页

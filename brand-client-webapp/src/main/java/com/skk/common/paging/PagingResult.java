@@ -4,9 +4,6 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
-/**
- * Created by Hunter on 2020-06-22.
- */
 public class PagingResult<T> extends PageInfo<T>{
 
     private List<T> result;

@@ -75,8 +75,6 @@ public class BrandLargeTypeServiceImplTest {
     public void findBrandLargeType() {
         BrandLargeType brandLargeType = new BrandLargeType();
         LayuiPage page = new LayuiPage();
-        page.setPage(2);
-
         PagingResult<BrandLargeType> pageResult
                 = brandLargeTypeService.findBrandLargeType(brandLargeType, page);
 

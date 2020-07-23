@@ -1,8 +1,5 @@
 package com.skk.common.paging;
 
-/**
- * Created by Hunter on 2020-06-22.
- */
 public class Page {
 
     private Integer page;
