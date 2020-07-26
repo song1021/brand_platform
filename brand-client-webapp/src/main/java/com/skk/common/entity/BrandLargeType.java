@@ -4,9 +4,13 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
+import java.util.List;
 
 @Table(name = "brand_large_type")
 public class BrandLargeType {
+
+    private List<BrandSmallType> smallTypeList;
+
     /**
      * 主键
      */
@@ -313,16 +317,25 @@ public class BrandLargeType {
         this.updaterId = updaterId;
     }
 
+    public List<BrandSmallType> getSmallTypeList() {
+        return smallTypeList;
+    }
+
+    public void setSmallTypeList(List<BrandSmallType> smallTypeList) {
+        this.smallTypeList = smallTypeList;
+    }
+
     @Override
     public String toString() {
         return "BrandLargeType{" +
-                "id=" + id +
+                "smallTypeList=" + smallTypeList +
+                ", id=" + id +
                 ", catalog='" + catalog + '\'' +
                 ", cnno='" + cnno + '\'' +
                 ", no='" + no + '\'' +
                 ", name='" + name + '\'' +
-                ", instruction='" + (instruction!=null && instruction.length()>10?instruction.substring(0,10):instruction) + '\'' +
-                ", remark='" + (remark!=null && remark.length()>10?remark.substring(0,10):remark) + '\'' +
+                ", instruction='" + instruction + '\'' +
+                ", remark='" + remark + '\'' +
                 ", recordStatus='" + recordStatus + '\'' +
                 ", updateCount=" + updateCount +
                 ", createDate=" + createDate +
